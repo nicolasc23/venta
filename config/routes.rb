@@ -1,4 +1,6 @@
 Venta::Application.routes.draw do
+  devise_for :users
+
   root :to => 'pages#hola'
   get 'hola'=> 'pages#hola'
 
