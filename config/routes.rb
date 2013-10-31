@@ -1,10 +1,16 @@
 Venta::Application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+ 
+  root :to => 'pages#hola'
+
+  ActiveAdmin.routes(self)
+
   resources :pins
 
 
   devise_for :users
+  ActiveAdmin.routes(self)
 
-  root :to => 'pages#hola'
   get 'hola'=> 'pages#hola'
 
   # The priority is based upon order of creation:

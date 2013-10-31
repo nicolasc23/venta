@@ -6,6 +6,8 @@ gem 'carrierwave'
 
 gem "fog"
 
+gem 'activeadmin'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -30,7 +32,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', "~> 3.0.4"
+gem "jquery-ui-rails", "~> 4.0.4"
 
 gem 'devise'
 
